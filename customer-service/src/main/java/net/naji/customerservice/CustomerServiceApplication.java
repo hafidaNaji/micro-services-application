@@ -1,13 +1,16 @@
 package net.naji.customerservice;
 
+import net.naji.customerservice.config.CustomerConfigParams;
 import net.naji.customerservice.entities.Customer;
 import net.naji.customerservice.Repository.CustomerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+@EnableConfigurationProperties(CustomerConfigParams.class)
 public class CustomerServiceApplication {
 
     public static void main(String[] args) {
