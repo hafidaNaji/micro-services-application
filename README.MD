@@ -14,5 +14,9 @@
 <img src="captures/Capture13.PNG">
 <img src="captures/Capture14.PNG">
 <img src="captures/Capture15.PNG">
+<img src="captures/Capture16.PNG">
+<img src="captures/Capture17.PNG">
+<img src="captures/Capture18.PNG">
+<img src="captures/Capture19.PNG">
 
 

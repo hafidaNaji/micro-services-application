@@ -1,5 +1,6 @@
 package net.naji.billingservice.feign;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.Getter;
 import net.naji.billingservice.entities.model.Customer;
 import net.naji.billingservice.entities.model.Product;
@@ -11,8 +12,22 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "customer-service")
 public interface CustomerRestClient {
       @GetMapping("/api/customers/{id}")
+      @CircuitBreaker(name = "customerServiceCB", fallbackMethod = "getDefaultCustomer")
       Customer getCustomerById(@PathVariable Long id);
 
     @GetMapping("/api/customers")
+    @CircuitBreaker(name = "customerServiceCB",fallbackMethod = "getDefaultCustomers")
     PagedModel<Customer> getAllCustomers();
+
+    default  Customer getDefaultCustomer(Long id, Exception exception){
+        return Customer.builder()
+                .id(id)
+                .name("Default Name")
+                .email("Default Email")
+                .build();
+    }
+    default PagedModel<Customer> getDefaultCustomers(Exception exception){
+        return PagedModel.empty();
+
+    }
 }
