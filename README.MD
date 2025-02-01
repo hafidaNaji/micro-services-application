@@ -18,5 +18,8 @@
 <img src="captures/Capture17.PNG">
 <img src="captures/Capture18.PNG">
 <img src="captures/Capture19.PNG">
+<h2>Création angular Customer</h2>
+<img src="captures/Capture20.PNG">
+
 
 
