@@ -20,8 +20,10 @@
 <img src="captures/Capture19.PNG">
 <h2>Création angular Customer</h2>
 <img src="captures/Capture20.PNG">
-<h2>Résolution erreur Cros</h2>
+<h2>Résolution erreur Cross</h2>
 <img src="captures/Capture21.PNG">
+<h2>Creation angular Products</h2>
+<img src="captures/Capture22.PNG">
 
 
 
