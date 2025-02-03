@@ -24,6 +24,8 @@
 <img src="captures/Capture21.PNG">
 <h2>Creation angular Products</h2>
 <img src="captures/Capture22.PNG">
+<h2>Creation angular Bills</h2>
+<img src="captures/Capture23.PNG">
 
 
 
